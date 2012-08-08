@@ -1,0 +1,30 @@
+<!DOCTYPE 5>
+<html>
+  <head>
+    <title>Grow</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="out.css" />
+    <style>
+      body {
+        padding: 80px;
+      }
+      textarea {
+        font: 14px "Helvetica Neue", Helvetica, arial, sans-serif;
+        border: 1px solid #ddd;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <title>Grow</title>
+    <script src="out.js"></script>
+    
+    <textarea>Type in me</textarea>
+    
+    <script>
+      var el = document.querySelector('textarea');
+      var grow = require('grow');
+      grow(el, { max: 5 });
+    </script>
+  </body>
+</html>
